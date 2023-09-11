@@ -3,7 +3,7 @@ import { IsNotEmpty } from 'class-validator';
 import { IsEnum } from 'class-validator';
 import { IsOptional } from 'class-validator';
 
-export class GetTasksFilter {
+export class GetTasksFilterDto {
   @IsOptional()
   @IsEnum(TaskStatus)
   status: TaskStatus;
